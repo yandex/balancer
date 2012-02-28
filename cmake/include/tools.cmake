@@ -2,8 +2,6 @@ SET_IF_NOTSET(MD5LIB -lmd)
 
 SET(INVALID_TOOLS)
 
-INCLUDE(${ARCADIA_ROOT}/cmake/icc/icc.cmake)
-
 IF (USE_CLANG)
     SET(CLDRV "${__cmake_incdir_}/../scripts/cldriver")
 

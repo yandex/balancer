@@ -365,20 +365,6 @@ ELSE (NOT "X${PROG}${CREATEPROG}X" STREQUAL "XX" AND NOT WITH_VALGRIND)
     ENDIF (PEERDIR MATCHES "util/.alloc")
 ENDIF (NOT "X${PROG}${CREATEPROG}X" STREQUAL "XX" AND NOT WITH_VALGRIND)
 
-INCLUDE(${ARCADIA_ROOT}/cmake/icc/icc.cmake)
-
-IF (USE_ICC)
-    IF (NOT "X${PROG}${CREATEPROG}X" STREQUAL "XX")
-        PEERDIR(
-            cmake/icc/src
-        )
-    ENDIF (NOT "X${PROG}${CREATEPROG}X" STREQUAL "XX")
-
-    SRCDIR(
-        ADDINCL cmake/icc/src
-    )
-ENDIF (USE_ICC)
-
 SRCDIR(
     util/private/stl/stlport-${CURRENT_STLPORT_VERSION}
 )

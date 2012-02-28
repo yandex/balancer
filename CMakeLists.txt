@@ -12,22 +12,11 @@ INCLUDE(${CMAKE_SOURCE_DIR}/cmake/include/global.cmake NO_POLICY_SCOPE)
 # =========================================================================== #
 
 SET(ROOT_PROJECTS
-        antirobot
-        bindings
         contrib
-        dict
-        FactExtract
-        junk
-        kernel
         library
-        quality
-        search
-        specsearches
         tools
         unittest
         web
-        ysite
-        yweb
 )
 
 #
@@ -37,8 +26,6 @@ SET(ROOT_PROJECTS
 #
 
 # =========================================================================== #
-
-#ENTER_PROJECT(arcadia)
 
 # DO NOT REMOVE OR COMMENT NEXT LINE!
 ADD_DIRS(util)
@@ -148,16 +135,12 @@ IF (NOT WIN32)
 
 ENDIF (NOT WIN32)
 
-# we have the old CMake in extlib!
-IF (NOT ROBOT_BUILD)
 
 ### This strings must locate only at the end of this file!!!
 FILE(READ ${TEST_DART_TMP_FILENAME} test_dart_content)
 FILE(WRITE ${TEST_DART_FILENAME} ${test_dart_content})
 FILE(REMOVE ${TEST_DART_TMP_FILENAME})
 ###
-
-ENDIF (NOT ROBOT_BUILD)
 
 IF (COMMAND ON_CMAKE_FINISH_HOOK)
     ON_CMAKE_FINISH_HOOK()
