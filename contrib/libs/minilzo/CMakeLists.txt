@@ -1,0 +1,10 @@
+LIBRARY()
+
+ENABLE(NOUTIL)
+ENABLE(NO_COMPILER_WARNINGS)
+
+SRCS(
+    minilzo.c
+)
+
+END()

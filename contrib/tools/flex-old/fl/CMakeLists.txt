@@ -1,0 +1,11 @@
+LIBRARY()
+
+ENABLE(NOUTIL)
+ENABLE(NO_COMPILER_WARNINGS)
+
+SRCS(
+	libmain.c
+	libyywrap.c
+)
+
+END()

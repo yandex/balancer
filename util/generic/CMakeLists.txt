@@ -1,0 +1,52 @@
+LIBRARY()
+
+ENABLE(NOUTIL)
+
+SRCS(
+    buffer.cpp
+    ptr.cpp
+    stroka.cpp
+    stroka_io.cpp
+    stroka_stdio.cpp
+    strfcpy.cpp
+    strbuf.cpp
+    yexception.cpp
+    ymath.cpp
+    chartraits.cpp
+
+    algorithm.h
+    array.h
+    avltree.h
+    bitmap.h
+    bitops.h
+    cast.h
+    char_buf.h
+    chartraits.h
+    deque.h
+    fwd.h
+    hash.h
+    hash_set.h
+    hide.h
+    intrlist.h
+    iterator.h
+    list.h
+    map.h
+    noncopyable.h
+    pair.h
+    rbtree.h
+    refcount.h
+    set.h
+    singleton.h
+    stack.h
+    static_assert.h
+    stlfwd.h
+    strkey.h
+    typehelpers.h
+    typelist.h
+    typetraits.h
+    utility.h
+    vector.h
+    ylimits.h
+)
+
+END()

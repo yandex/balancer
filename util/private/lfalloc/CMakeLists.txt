@@ -1,0 +1,11 @@
+LIBRARY()
+
+ENABLE(NOUTIL)
+ENABLE(NO_COMPILER_WARNINGS)
+
+SRCS(
+    lf_allocX64.cpp 
+)
+SET(IDE_FOLDER "util")
+
+END()

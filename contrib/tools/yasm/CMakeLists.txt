@@ -1,0 +1,117 @@
+PROGRAM()
+
+ENABLE(NOUTIL)
+ENABLE(NO_COMPILER_WARNINGS)
+ENABLE(NO_OPTIMIZE)
+
+SRCDIR(
+    contrib/tools/yasm
+    contrib/tools/yasm/modules
+    contrib/tools/yasm/modules/parsers
+    contrib/tools/yasm/modules/parsers/nasm
+    contrib/tools/yasm/modules/parsers/gas
+    contrib/tools/yasm/modules/dbgfmts
+    contrib/tools/yasm/modules/dbgfmts/null
+    contrib/tools/yasm/modules/dbgfmts/codeview
+    contrib/tools/yasm/modules/dbgfmts/dwarf2
+    contrib/tools/yasm/modules/dbgfmts/stabs
+    contrib/tools/yasm/modules/preprocs
+    contrib/tools/yasm/modules/preprocs/nasm
+    contrib/tools/yasm/modules/preprocs/raw
+    contrib/tools/yasm/modules/preprocs/cpp
+    contrib/tools/yasm/modules/objfmts
+    contrib/tools/yasm/modules/objfmts/bin
+    contrib/tools/yasm/modules/objfmts/macho
+    contrib/tools/yasm/modules/objfmts/elf
+    contrib/tools/yasm/modules/objfmts/dbg
+    contrib/tools/yasm/modules/objfmts/rdf
+    contrib/tools/yasm/modules/objfmts/coff
+    contrib/tools/yasm/modules/objfmts/xdf
+    contrib/tools/yasm/modules/listfmts
+    contrib/tools/yasm/modules/listfmts/nasm
+    contrib/tools/yasm/modules/arch
+    contrib/tools/yasm/modules/arch/x86
+    contrib/tools/yasm/modules/arch/lc3b
+    contrib/tools/yasm/libyasm
+    contrib/tools/yasm/frontends
+    contrib/tools/yasm/frontends/tasm
+    contrib/tools/yasm/frontends/yasm
+)
+
+SRCS(
+    x86arch.c
+    x86bc.c
+    x86expr.c
+    x86id.c
+    lc3barch.c
+    lc3bbc.c
+    nasm-listfmt.c
+    gas-parser.c
+    gas-parse.c
+    nasm-parser.c
+    nasm-parse.c
+    nasm-preproc.c
+    nasm-pp.c
+    nasmlib.c
+    nasm-eval.c
+    raw-preproc.c
+    cpp-preproc.c
+    cv-dbgfmt.c
+    cv-symline.c
+    cv-type.c
+    dwarf2-dbgfmt.c
+    dwarf2-line.c
+    dwarf2-aranges.c
+    dwarf2-info.c
+    null-dbgfmt.c
+    stabs-dbgfmt.c
+    dbg-objfmt.c
+    bin-objfmt.c
+    elf.c
+    elf-objfmt.c
+    elf-x86-x86.c
+    elf-x86-amd64.c
+    coff-objfmt.c
+    win64-except.c
+    macho-objfmt.c
+    rdf-objfmt.c
+    xdf-objfmt.c
+    assocdat.c
+    bitvect.c
+    bc-align.c
+    bc-data.c
+    bc-incbin.c
+    bc-org.c
+    bc-reserve.c
+    bytecode.c
+    errwarn.c
+    expr.c
+    file.c
+    floatnum.c
+    hamt.c
+    insn.c
+    intnum.c
+    inttree.c
+    linemap.c
+    md5.c
+    mergesort.c
+    phash.c
+    section.c
+    strcasecmp.c
+    strsep.c
+    symrec.c
+    valparam.c
+    value.c
+    xmalloc.c
+    xstrdup.c
+    x86cpu.c
+    x86regtmod.c
+    lc3bid.c
+    gas-token.c
+    nasm-token.c
+    module.c
+    yasm.c
+    yasm-options.c
+)
+
+END()

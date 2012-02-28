@@ -1,0 +1,15 @@
+LIBRARY()
+
+ENABLE(NOUTIL)
+ENABLE(NO_COMPILER_WARNINGS)
+ENABLE(NO_SHARED_LIB)
+
+SRCDIR(
+	contrib/tools/ragel5/aapl
+)
+
+SRCS(
+	common.cpp
+)
+
+END()
