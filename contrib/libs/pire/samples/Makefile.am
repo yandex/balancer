@@ -1,0 +1,4 @@
+SUBDIRS = \
+	inline \
+	blacklist \
+	pigrep
