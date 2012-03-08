@@ -13,3 +13,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ----------------------------------------------------------
 
 3) Install instructions.
+ * checkout balancer
+ * mkdir build
+   cd build
+   cmake -DMAKE_ONLY=web/httpd/server -DCMAKE_BUILD_TYPE=release ../balancer
+   make -j 2
+ * optionally you can create local.cmake in build/, with some interesting options:
+   SET(MY_GCC gcc46)
+   SET(MY_GPP g++46)
+   SET(USE_STATIC_CPP_RUNTIME no), for disabling static linkage of c++ runtime(libsupc++)
+
