@@ -1,6 +1,10 @@
 #include "platform.h"
 
-#ifndef _win_
+#if defined(_win_) || defined(_darwin_)
+    #define NO_CXXABI
+#endif
+
+#if !defined(NO_CXXABI)
     #include <stdexcept>
     #include <cxxabi.h>
 #endif
@@ -8,7 +12,7 @@
 #include "demangle.h"
 
 const char* TCppDemangler::Demangle(const char* name) {
-#ifdef _win_
+#if defined(NO_CXXABI)
     return name;
 #else
     int status;

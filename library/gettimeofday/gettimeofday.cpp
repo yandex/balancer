@@ -234,7 +234,11 @@ namespace {
 }
 
 #if defined(SIMULATE_GETTIMEOFDAY)
+#if defined(_darwin_)
+extern "C" int gettimeofday(struct timeval* tp, void*) {
+#else
 extern "C" int gettimeofday(struct timeval* tp, struct timezone*) {
+#endif
     if (tp) {
         const TTime t = FastMicroSeconds();
 
