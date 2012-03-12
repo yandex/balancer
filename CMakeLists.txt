@@ -1,4 +1,3 @@
-# http://wiki.yandex-team.ru/PoiskovajaPlatforma/Build/MacrosAndVars
 
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6 FATAL_ERROR)
 CMAKE_POLICY(VERSION 2.6.0)
