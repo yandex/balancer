@@ -1,3 +1,5 @@
+**Deprectated and no longer supported**
+
 1) About.
 
 2) Licence. All Yandex code in this distribution is under following licence:
